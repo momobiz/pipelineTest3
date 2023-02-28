@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-28T08:41:49 CET" name="Default suite" finished-at="2023-02-28T08:42:06 CET" duration-ms="17539">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:pipelineTest3.pipelineTest3.Runner3@bae7dc0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-02-28T08:41:49 CET" name="Default test" finished-at="2023-02-28T08:42:06 CET" duration-ms="17539">
+      <class name="pipelineTest3.pipelineTest3.Runner3">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:pipelineTest3.pipelineTest3.Runner3@bae7dc0]" started-at="2023-02-28T08:41:49 CET" name="setUpClass" finished-at="2023-02-28T08:41:49 CET" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:pipelineTest3.pipelineTest3.Runner3@bae7dc0]" started-at="2023-02-28T08:41:49 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-28T08:42:06 CET" duration-ms="16643" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify when login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of website automation exercise]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at pipelineTest3.pipelineTest3.LoginPipeline3Steps.a_warning_message_is_displayed(LoginPipeline3Steps.java:40)
+at ✽.A warning message is displayed(file:///C:/Users/moham/eclipse-workspace/pipelineTest3/src/test/resources/features/loginTest3.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:pipelineTest3.pipelineTest3.Runner3@bae7dc0]" started-at="2023-02-28T08:42:06 CET" name="tearDownClass" finished-at="2023-02-28T08:42:06 CET" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- pipelineTest3.pipelineTest3.Runner3 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
